@@ -20,13 +20,20 @@ from FiftyOneDegrees import fiftyone_degrees_mobile_detector_v3_wrapper
 from fiftyone_degrees.mobile_detector.conf import settings
 
 dataFile = settings.V3_WRAPPER_DATABASE
-properties = 'BrowserName,BrowserVendor,BrowserVersion,DeviceType,HardwareVendor,IsTablet,IsMobile,IsCrawler,ScreenInchesDiagonal,ScreenPixelsWidth'
+properties = 'BrowserName,BrowserVendor,BrowserVersion,DeviceType,
+HardwareVendor,IsTablet,IsMobile,IsCrawler,ScreenInchesDiagonal,
+ScreenPixelsWidth'
 cacheSize = settings.CACHE_SIZE
 poolSize = settings.POOL_SIZE
 
-provider = fiftyone_degrees_mobile_detector_v3_wrapper.Provider(dataFile, properties, cacheSize, poolSize)
+provider = fiftyone_degrees_mobile_detector_v3_wrapper.Provider(dataFile,
+properties,
+cacheSize,
+poolSize)
 
-userAgent = 'Mozilla/5.0 (Linux; Android 4.4.2; en-us; SAMSUNG SCH-I545 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36'
+userAgent = 'Mozilla/5.0 (Linux; Android 4.4.2; en-us; SAMSUNG SCH-I545 
+Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 
+Chrome/28.0.1500.94 Mobile Safari/537.36'
 
 device = provider.getMatch(userAgent)
 
