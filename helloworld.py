@@ -10,6 +10,7 @@ This tutorial:
 <li>Sets a User-Agent,
 <li>Gets a match for the User-Agent. This returns a match object,
 <li>Lists all the selected properties for the matched device.
+<ol>
 </tutorial>
 '''
 
