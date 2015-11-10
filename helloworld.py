@@ -11,6 +11,7 @@ This tutorial:
 <li>Gets a match for the User-Agent. This returns a match object,
 <li>Lists all the selected properties for the matched device.
 </ol>
+<br>
 </tutorial>
 '''
 
