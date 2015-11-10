@@ -5,13 +5,18 @@ This tutorial:
 <br>
 <ol>
 <li>Imports the detector and the settings file,
+</li>
 <li>Sets the data file, properties, cache size and pool size,
+</li>
 <li>Initialises the provider,
+</li>
 <li>Sets a User-Agent,
+</li>
 <li>Gets a match for the User-Agent. This returns a match object,
+</li>
 <li>Lists all the selected properties for the matched device.
+</li>
 </ol>
-<br>
 </tutorial>
 '''
 
