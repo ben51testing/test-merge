@@ -12,7 +12,7 @@ This tutorial:
 <li>Lists all the selected properties for the matched device.
 </tutorial>
 '''
-# Snippet Start
+# //Snippet Start
 from FiftyOneDegrees import fiftyone_degrees_mobile_detector_v3_wrapper
 from fiftyone_degrees.mobile_detector.conf import settings
 
@@ -33,4 +33,4 @@ for name in properties.split(','):
 		sys.stdout.write('   %s: %s\n' % (name, ' '.join(value)))
 	else:
 		sys.stdout.write('   %s: %s\n' % (name, 'N/A in Lite'))
-# Snippet End
+# //Snippet End
